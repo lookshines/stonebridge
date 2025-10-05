@@ -18,7 +18,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-.stoneenv/
+stoneenv/
 
 # IDE / Editors
 .vscode/
