@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-1@!miy3vy@xx*20se9h3*9*@ms$$59@7eegww+%yd&7^6b)nzr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stonebridge.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['stonebridge-txts.onrender.com', 'localhost']
 
 
 # Application definition
