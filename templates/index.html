@@ -1,0 +1,1158 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="{% static 'fonts/flaticon.css' %}">
+        <!-- Remixicon CSS -->
+        <link rel="stylesheet" href="{% static 'fonts/remixicon.css' %}">
+        <!-- Owl Carousel Min CSS --> 
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <!-- Magnific Popup CSS --> 
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+        <!-- Odometer CSS -->
+        <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!-- Title -->
+        <title>StoneBridges</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.svg' %}">
+    </head>
+    <body>
+
+        <!-- Preloader Start -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <div class="mobile-responsive-nav">
+                <div class="container-fluid">
+                    <div class="mobile-responsive-menu">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{% static 'images/logo.svg' %}" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="desktop-nav nav-area">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="{% static 'images/logo.svg' %}" alt="logo">
+                        </a>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        Home 
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        About Us
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="others-options d-flex align-items-center">
+                                <div class="optional-item">
+                                    <div class="optional-item-language dropdown language-option"> 
+                                        <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="ri-global-line"></i>
+                                            <span class="lang-name"></span>  
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1"> 
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/uk.png'%}" alt="flag">
+                                                English
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/china.png' %}" alt="flag">
+                                                简体中文
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/uae.png' %}" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="optional-item">
+                                    <a href="tel:+926668880000" class="default-btn two">+92 666 888 0000</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="search-btn">
+                    <a class="#" href="#searchmodal" data-bs-toggle="modal" data-bs-target="#searchmodal">
+                        <i class="ri-search-line"></i>
+                    </a>
+                </div>
+            </div> 
+
+            <div class="side-nav-responsive">
+                <div class="container-max">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="side-nav-item">
+                                    <div class="optional-item-language dropdown language-option"> 
+                                        <button class="dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="ri-global-line"></i>
+                                            <span class="lang-name"></span>  
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language"> 
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/uk.png' %}" alt="flag">
+                                                English
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/china.png' %}" alt="flag">
+                                                简体中文
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'images/uae.png'%}" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="side-nav-item">
+                                    <a href="tel:+926668880000" class="default-btn two">+92 666 888 0000</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+        <!-- Modal Start -->
+        <div class="modal fade fade-scale searchmodal" id="searchmodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-search-form">
+                            <input type="search" class="search-field" placeholder="Search...">
+                            <button type="submit"><i class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <!-- Hero Area -->
+        <div class="hero-area">
+            <div class="hero-slider owl-carousel owl-theme">
+                <div class="hero-item hero-item-bg1">
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <span>Building Knowledge. Bridging Opportunities. Driving Impact.</span>
+                            <h1>Empowering Learners, Educators & Organizations</h1>
+                            <p>At Stonebridges, we combine education and professional consulting to 
+                                unlock potential, strengthen systems, and create lasting impact.</p>
+                            <a href="contact.html" class="default-btn">Work With Us</a>
+                        </div>
+                    </div>
+
+                    <ul class="hero-item-social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/" target="_blank">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="talk-btn-area">
+                        <a href="contact.html" class="talk-btn">
+                            <i class="ri-wechat-line"></i>
+                            <span>Let’s Talk</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-item hero-item-bg2">
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <span>Consulting & Professional Services</span>
+                            <h1>Transforming Ideas Into Sustainable Results</h1>
+                            <p>From governance and fundraising to project management and business 
+                                advisory, Stonebridges helps organizations grow with clarity and 
+                                confidence.</p>
+                            <a href="contact.html" class="default-btn">Start Your Journey</a>
+                        </div>
+                    </div>
+
+                    <ul class="hero-item-social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/" target="_blank">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="talk-btn-area">
+                        <a href="contact.html" class="talk-btn">
+                            <i class="ri-wechat-line"></i>
+                            <span>Let’s Talk</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-item hero-item-bg3">
+                    <div class="container-fluid">
+                        <div class="hero-content">
+                            <span>Educational Services</span>
+                            <h1>Inspiring Lifelong Learning & Excellence</h1>
+                            <p>Through tutoring, holiday programs, school advisory, and events, 
+                                we support learners, parents, and educators to achieve success at 
+                                every stage.</p>
+                            <a href="contact.html" class="default-btn">Explore Our Programs</a>
+                        </div>
+                    </div>
+
+                    <ul class="hero-item-social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/" target="_blank">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="talk-btn-area">
+                        <a href="contact.html" class="talk-btn">
+                            <i class="ri-wechat-line"></i>
+                            <span>Let’s Talk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End -->
+
+        <!-- Banner Bottom Area -->
+        <div class="banner-bottom-area pt-100 pb-70">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-6">
+                        <div class="banner-bottom-card banner-bottom-card-bg">
+                            <div class="icon icon-bg1">
+                                <i class="flaticon-open-book"></i>
+                            </div>
+                            <h3><a href="case-details.html">Education & Learning</a></h3>
+                            <p>From tutoring to literacy programs and advisory services, we empower learners, parents, and schools with tools for success.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                        <div class="banner-bottom-card banner-bottom-card-bg2">
+                            <div class="icon icon-bg2">
+                                <i class="flaticon-consulting-1"></i>
+                            </div>
+                            <h3><a href="case-details.html">Consulting & Advisory</a></h3>
+                            <p>We help organizations, startups, and institutions build strong systems, governance, and strategies for sustainable growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                        <div class="banner-bottom-card banner-bottom-card-bg3">
+                            <div class="icon icon-bg3">
+                                <i class="flaticon-project-management"></i>
+                            </div>
+                            <h3><a href="case-details.html">Projects & Impact</a></h3>
+                            <p>With expertise in project management, fundraising, and capacity building, we deliver solutions that drive measurable impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Bottom Area End -->
+
+        <!-- About Area -->
+        <div class="about-area pb-70">
+            <div class="container">
+                <div class="row align-items-center justify-align-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'images/about-img/about-img1.jpg' %}" alt="Images">
+                            <!--<div class="sub-img">
+                                <img src="{% static 'images/about-img/about-img2.jpg' %}" alt="">
+                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-content pl-20">
+                            <div class="section-title">
+                                <span>About Stonebridges</span>
+                                <h2>Bridging Knowledge, Strategy, and Innovation</h2>
+                                <p>Stonebridges is an education and consulting firm committed to transforming organizations, 
+                                    communities, and institutions through strategic solutions and capacity building. 
+                                    We provide expert advisory services, training, and project support that enable leaders to make informed decisions and drive sustainable impact.</p>
+                            </div>
+                            <h3>We empower growth through education, governance, and innovative solutions</h3>
+                            
+                            <div class="all-skill-bar">
+                                <div class="skill-bar" data-percentage="95%">
+                                    <h4 class="progress-title-holder clearfix">
+                                        <span class="progress-title">Education & Training</span>
+                                        <span class="progress-number-wrapper">
+                                            <span class="progress-number-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-content-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-bar mb-0" data-percentage="90%">
+                                    <h4 class="progress-title-holder clearfix">
+                                        <span class="progress-title">Consulting & Advisory</span>
+                                        <span class="progress-number-wrapper">
+                                            <span class="progress-number-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-content-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar mb-0" data-percentage="85%">
+                                    <h4 class="progress-title-holder clearfix">
+                                        <span class="progress-title">Governance & Collaboration</span>
+                                        <span class="progress-number-wrapper">
+                                            <span class="progress-number-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-content-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+
+        <!-- Services Area -->
+        <div class="services-area services-area-bg ptb-100">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>Our Services</span>
+                    <h2>Bridging Knowledge and Practice</h2>
+                    <p>At Stonebridges, we deliver innovative educational and consulting solutions that empower individuals, schools, 
+                        startups, and organizations to achieve excellence, growth, and impact</p>
+                </div>
+
+                <div class="services-slider owl-carousel owl-theme pt-45">
+                    <div class="services-item">
+                        <i class="flaticon-brainstorming"></i>
+                        <h3><a href="service-details.html">Educational Services</a></h3>
+                        <p>From tutoring and holiday programs to literacy resources, parent consultations, 
+                            and school advisory, we inspire lifelong learning and academic excellence.</p>
+                    </div>
+
+                    <div class="services-item">
+                        <i class="flaticon-target"></i>
+                        <h3><a href="service-details.html">Governance & Structuring</a></h3>
+                        <p>We design policies, frameworks, and organizational structures that strengthen institutions and foster sustainable growth.</p>
+                    </div>
+
+                    <div class="services-item">
+                        <i class="flaticon-analysis"></i>
+                        <h3><a href="service-details.html">Project Management</a></h3>
+                        <p>Tailored workshops, training, and conferences that strengthen people, schools, and organizations to thrive in changing environments.</p>
+                    </div>
+
+                    <div class="services-item">
+                        <i class="flaticon-growth"></i>
+                        <h3><a href="service-details.html">Capacity Building</a></h3>
+                        <p>Tailored workshops, training, and conferences that strengthen people, schools, and organizations to thrive in changing environments.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Services Area End -->
+
+        <!-- Process Area -->
+        <div class="process-area pt-100 pb-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <span>Our Process</span>
+                            <h2>Building Knowledge, Strategy & Impact Together</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="process-text">
+                            <p>At Stonebridges, we follow a clear and collaborative process to ensure every project, 
+                                training, or advisory service leads to measurable results. From education to organizational 
+                                consulting, our focus is on creating sustainable impact that lasts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-align-center pt-45">
+                    <div class="col-lg-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 col-6">
+                                <div class="process-card">
+                                    <div class="number">1</div>
+                                    <h3>Discover & Assess</h3>
+                                    <p>We begin by understanding your needs — whether in education, governance, or business — to identify strengths, 
+                                        gaps, and opportunities.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-6">
+                                <div class="process-card">
+                                    <div class="number">2</div>
+                                    <h3>Design & Strategize</h3>
+                                   <p>We co-create tailored solutions, policies, or learning programs that align with your goals and 
+                                        deliver long-term value.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-6">
+                                <div class="process-card">
+                                    <div class="number">3</div>
+                                    <h3>Implementation & Monitor</h3>
+                                   <p>Lorem ipsum dolor sit amet, csectetur adipis elit csectetur ipsum dolor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="process-img pl-20">
+                            <img src="{% static 'images/process-img.jpg'%}" alt="Images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Area End -->
+
+        <!-- Counter Area -->
+        <div class="counter-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-card">
+                            <i class="flaticon-consulting"></i>
+                            <h3><span class="odometer" data-count="115">000</span>K</h3>
+                            <p>Projects & Advisory Solutions</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-card">
+                            <i class="flaticon-networking"></i>
+                            <h3><span class="odometer" data-count="13">00</span>K</h3>
+                            <p>Learners & Parents Supported</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-card">
+                            <i class="flaticon-brainstorming"></i>
+                            <h3><span class="odometer" data-count="215">000</span>K</h3>
+                            <p>Institutions & Startups Guided</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-card">
+                            <i class="flaticon-plan"></i>
+                            <h3><span class="odometer" data-count="178">000</span></h3>
+                            <p>Expert Trainers & Consultants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Area End -->
+
+        <!-- Case Studies Area -->
+        <!--<div class="case-studies-area ptb-100">
+            <div class="container-fluid p-0">
+                <div class="section-title text-center">
+                    <span>Case Studies</span>
+                    <h2>A Personalized Level of Care</h2>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="case-studies-slider owl-carousel owl-theme pt-45">
+                    <div class="case-studies-item">
+                        <a href="case-details.html">
+                            <img src="{% static 'images/case-studies/case-studies-img1.jpg' %}" alt="Images">
+                        </a>
+                        <div class="content">
+                            <h3><a href="case-details.html">Business Growth</a></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue maecenas eu tincidunt platea massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-studies-item">
+                        <a href="case-details.html">
+                            <img src="{% static 'images/case-studies/case-studies-img2.jpg' %}" alt="Images">
+                        </a>
+                        <div class="content">
+                            <h3><a href="case-details.html">Audit & Assurance</a></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue maecenas eu tincidunt platea massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-studies-item">
+                        <a href="case-details.html">
+                            <img src="{% static 'images/case-studies/case-studies-img3.jpg' %}" alt="Images">
+                        </a>
+                        <div class="content">
+                            <h3><a href="case-details.html">Corporate Finance </a></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue maecenas eu tincidunt platea massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-studies-item">
+                        <a href="case-details.html">
+                            <img src="{% static 'images/case-studies/case-studies-img4.jpg'%}" alt="Images">
+                        </a>
+                        <div class="content">
+                            <h3><a href="case-details.html">Finance Strategy</a></h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue maecenas eu tincidunt platea massa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Case Studies Area End -->
+
+        <!-- Review Area -->
+        <!--<div class="review-area ptb-100">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>Our Review</span>
+                    <h2>What They Are Talking About Us</h2>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="review-slider owl-carousel owl-theme pt-45">
+                    <div class="review-item">
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill off-color"></i>
+                        </div>
+                        <p>Have 22+ Years of Experience. We Offer Business and Financial Consulting We Have 22+ Years of Experience. We Offer Business and Financial Consulting.</p>
+                        <h3>Jemson Doe</h3>
+                        <span>Businessman</span>
+                        <div class="review-item-img">
+                            <img src="{% static 'images/review/review-user1.jpg' %}" alt="Images">
+                        </div>
+
+                        <div class="icon">
+                            <i class="flaticon-straight-quotes"></i>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill off-color"></i>
+                        </div>
+                        <p>Have 22+ Years of Experience. We Offer Business and Financial Consulting We Have 22+ Years of Experience. We Offer Business and Financial Consulting.</p>
+                        <h3>Rosalin William </h3>
+                        <span>Founder Of Torado</span>
+                        <div class="review-item-img">
+                            <img src="{% static 'images/review/review-user2.jpg' %}" alt="Images">
+                        </div>
+
+                        <div class="icon">
+                            <i class="flaticon-straight-quotes"></i>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill off-color"></i>
+                        </div>
+                        <p>Have 22+ Years of Experience. We Offer Business and Financial Consulting We Have 22+ Years of Experience. We Offer Business and Financial Consulting.</p>
+                        <h3>Martin Darwin</h3>
+                        <span>Founder Of ABN</span>
+                        <div class="review-item-img">
+                            <img src="{% static 'images/review/review-user3.jpg'%}" alt="Images">
+                        </div>
+
+                        <div class="icon">
+                            <i class="flaticon-straight-quotes"></i>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill off-color"></i>
+                        </div>
+                        <p>Have 22+ Years of Experience. We Offer Business and Financial Consulting We Have 22+ Years of Experience. We Offer Business and Financial Consulting.</p>
+                        <h3>Aana Smith</h3>
+                        <span>Marketing Director</span>
+                        <div class="review-item-img">
+                            <img src="{% static 'images/review/review-user4.jpg'%}" alt="Images">
+                        </div>
+
+                        <div class="icon">
+                            <i class="flaticon-straight-quotes"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Review Area End -->
+
+        <!-- Choose Area -->
+        <div class="choose-area ptb-100 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="choose-content">
+                            <div class="section-title">
+                                <span>Why Choose Us</span>
+                                <h2>Bridging Knowledge and Practice for Lasting Impact</h2>
+                                <p>At Stonebridges, we go beyond traditional consulting and training. With our dual focus on education and 
+                                    professional advisory, we empower individuals, schools, startups, and organizations to thrive with strategies 
+                                    that are practical, innovative, and sustainable.</p>
+                            </div>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i>Proven Expertise:</li>
+                                <li><i class="ri-check-double-line"></i>Tailored Solutions:</li>
+                                <li><i class="ri-check-double-line"></i>Capacity Building:</li>
+                                <li><i class="ri-check-double-line"></i>Integrity & Impact:</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!--<div class="choose-play-btn">
+                            <img src="{% static 'images/why-choose-us/why-choose-us.jpg' %}">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Choose Area End -->
+
+        <!-- Team Area -->
+        <div class="team-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>Expert Team</span>
+                    <h2>What They Are Talking About Us</h2>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="row pt-45 justify-content-center">
+                    <div class="col-lg-4 col-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="{% static 'images/team/team-img1.jpg' %}" alt="Team Images">
+                                <ul class="team-social">
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="ri-facebook-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/" target="_blank">
+                                            <i class="ri-google-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content">
+                                <h3>Justin Novak</h3>
+                                <span>Founder & SEO</span>
+                                <a href="mailto:justinnovak@info.com" class="mail-btn">justinnovak@info.com</a>
+                                <a href="tel:+298-790-423-654" class="cell-btn">298-790-423-654</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="{% static 'images/team/team-img2.jpg' %}" alt="Team Images">
+                                <ul class="team-social">
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="ri-facebook-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/" target="_blank">
+                                            <i class="ri-google-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content">
+                                <h3>Thomson Darwin</h3>
+                                <span>Finance Expert</span>
+                                <a href="mailto:thomsondarwin@info.com" class="mail-btn">thomsondarwin@info.com</a>
+                                <a href="tel:+298-790-423-874" class="cell-btn">298-790-423-874</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="{% static 'images/team/team-img3.jpg'%}" alt="Team Images">
+                                <ul class="team-social">
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="ri-facebook-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="ri-twitter-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="ri-instagram-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/" target="_blank">
+                                            <i class="ri-google-fill"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content">
+                                <h3>Norton Berry</h3>
+                                <span>Senior Advisor</span>
+                                <a href="mailto:nortonberry@info.com" class="mail-btn">nortonberry@info.com</a>
+                                <a href="tel:+298-790-423-614" class="cell-btn">298-790-423-614</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Area End -->
+
+        <!-- Appointment Area -->
+        <div class="appointment-area appointment-area-bg pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="appointment-content">
+                            <div class="section-title">
+                                <span>Contact Us</span>
+                                <h2>We’re Here to Support Your Business Growth</h2>
+                                <p>Whether you’re looking to strengthen your business operations, enhance digital capabilities, or design 
+                                    impactful projects, we are here to help. Reach out to us today and let’s explore how we can work together to 
+                                    achieve your goals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="appointment-form">
+                            <h3>Get in Touch Today</h3>
+                            <p>Fill out the form below and our team will get back to you as soon as possible.</p>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Please Enter Your Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment Area End -->
+
+        <!-- Footer Area -->
+        <footer class="footer-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="{% static 'images/logo-footer.svg' %}" alt="Footer Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget ps-5">
+                            <h3>Services</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="service-details.html" target="_blank">
+                                        Advanced Analytics
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="service-details.html" target="_blank">
+                                        Business Consulting
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="service-details.html" target="_blank">
+                                        Corporate Finance Consultaing  
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="service-details.html" target="_blank">
+                                        Customer Strategy & Planning
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="service-details.html" target="_blank">
+                                        Finance Consulting
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget ps-5">
+                            <h3>Explore</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="about.html" target="_blank">
+                                        About Us
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="contact.html" target="_blank">
+                                        Contact Us    
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a href="team.html" target="_blank">
+                                        Meet Our Team
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="case-study.html" target="_blank">
+                                        Case Studies
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="blog-1.html" target="_blank">
+                                        Latest News
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget ps-5">
+                            <h3>Contact Info</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    1428 Callison Lane Building 201
+                                    Virginia, VA 22902
+                                </li> 
+                                <li>
+                                    <a href="mailto:hello@torado.com" target="_blank">
+                                        hello@torado.com
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="mailto:info@torado.com" target="_blank">
+                                        info@torado.com
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="tel:+62989-554-1979" target="_blank">
+                                        +62 989-554-1979
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+        <!-- Copyright Area -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="copy-right-text">
+                            <p>
+                                © Stonebridges All Rights Reserved by 
+                                <a href="#" target="_blank">Tanlytic</a> 
+                            </p>
+
+                            <ul class="copy-right-list">
+                                <li>
+                                    <a href="terms-condition.html" target="_blank">
+                                        Terms & Conditions      
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a href="privacy-policy.html" target="_blank">
+                                        Privacy Policy 
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="copy-right-social">
+                            <ul class="social-link">
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Area End -->
+
+
+
+        <!-- Jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js'%}"></script>
+        <!-- Bootstrap Bundle Min JS -->
+        <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+        <!-- Meanmenu JS -->
+        <script src="{% static 'js/meanmenu.min.js'%}"></script>
+        <!-- Odometer JS -->
+        <script src="{% static 'js/odometer.min.js'%}"></script>
+        <!-- Appear Min JS -->
+        <script src="{% static 'js/appear.min.js'%}"></script>
+        <!-- Owl Carousel JS -->
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <!-- Countdown JS -->
+        <script src="{% static 'js/countdown.min.js'%}"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="{% static 'js/ajaxchimp.min.js'%}"></script>
+        <!-- Form Validator Min JS -->
+        <script src="{% static 'js/form-validator.min.js' %}"></script>
+        <!-- Contact Form JS -->
+        <script src="{% static 'js/contact-form-script.js' %}"></script>
+        <!-- Custom Form JS -->
+        <script src="{% static 'js/custom.js' %}"></script>
+
+    </body>
+</html>

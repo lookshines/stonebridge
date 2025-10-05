@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?8301e24ec8dd5e574d6facc4c6ceabba") format("truetype"),
+url("./flaticon.woff?8301e24ec8dd5e574d6facc4c6ceabba") format("woff"),
+url("./flaticon.woff2?8301e24ec8dd5e574d6facc4c6ceabba") format("woff2"),
+url("./flaticon.eot?8301e24ec8dd5e574d6facc4c6ceabba#iefix") format("embedded-opentype");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-consulting:before {
+    content: "\f101";
+}
+.flaticon-analysis:before {
+    content: "\f102";
+}
+.flaticon-brainstorming:before {
+    content: "\f103";
+}
+.flaticon-worker:before {
+    content: "\f104";
+}
+.flaticon-play-button:before {
+    content: "\f105";
+}
+.flaticon-straight-quotes:before {
+    content: "\f106";
+}
+.flaticon-consulting-1:before {
+    content: "\f107";
+}
+.flaticon-target:before {
+    content: "\f108";
+}
+.flaticon-growth:before {
+    content: "\f109";
+}
+.flaticon-networking:before {
+    content: "\f10a";
+}
+.flaticon-plan:before {
+    content: "\f10b";
+}
+.flaticon-health-insurance:before {
+    content: "\f10c";
+}
+.flaticon-practice:before {
+    content: "\f10d";
+}
+.flaticon-branding:before {
+    content: "\f10e";
+}
+.flaticon-mobile-banking:before {
+    content: "\f10f";
+}
+.flaticon-goal:before {
+    content: "\f110";
+}
+.flaticon-audit:before {
+    content: "\f111";
+}
