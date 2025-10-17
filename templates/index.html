@@ -208,7 +208,7 @@
         <!-- Hero Area -->
         <div class="hero-area">
             <div class="hero-slider owl-carousel owl-theme">
-                <div class="hero-item hero-item-bg1">
+                <div class="hero-item hero-item-bg1" style="background-image: url({% static 'images/hero/building-knowledge.png' %});">
                     <div class="container-fluid">
                         <div class="hero-content">
                             <span>Building Knowledge. Bridging Opportunities. Driving Impact.</span>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="hero-item hero-item-bg2">
+                <div class="hero-item hero-item-bg2" style="background-image: url({% static 'images/hero/consulting.png' %});">
                     <div class="container-fluid">
                         <div class="hero-content">
                             <span>Consulting & Professional Services</span>
@@ -293,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="hero-item hero-item-bg3">
+                <div class="hero-item hero-item-bg3" style="background-image: url({% static 'images/hero/education-services.png' %});">
                     <div class="container-fluid">
                         <div class="hero-content">
                             <span>Educational Services</span>
@@ -344,7 +344,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-6">
-                        <div class="banner-bottom-card banner-bottom-card-bg">
+                        <div class="banner-bottom-card banner-bottom-card-bg fade-up">
                             <div class="icon icon-bg1">
                                 <i class="flaticon-open-book"></i>
                             </div>
@@ -354,7 +354,7 @@
                     </div>
 
                     <div class="col-lg-4 col-6">
-                        <div class="banner-bottom-card banner-bottom-card-bg2">
+                        <div class="banner-bottom-card banner-bottom-card-bg2 fade-up">
                             <div class="icon icon-bg2">
                                 <i class="flaticon-consulting-1"></i>
                             </div>
@@ -364,7 +364,7 @@
                     </div>
 
                     <div class="col-lg-4 col-6">
-                        <div class="banner-bottom-card banner-bottom-card-bg3">
+                        <div class="banner-bottom-card banner-bottom-card-bg3 fade-up">
                             <div class="icon icon-bg3">
                                 <i class="flaticon-project-management"></i>
                             </div>
@@ -378,11 +378,11 @@
         <!-- Banner Bottom Area End -->
 
         <!-- About Area -->
-        <div class="about-area pb-70">
+        <div class="about-area ptb-100 ">
             <div class="container">
                 <div class="row align-items-center justify-align-center">
                     <div class="col-lg-6">
-                        <div class="about-img">
+                        <div class="about-img fade-right">
                             <img src="{% static 'images/about-img/about-img1.jpg' %}" alt="Images">
                             <!--<div class="sub-img">
                                 <img src="{% static 'images/about-img/about-img2.jpg' %}" alt="">
@@ -391,7 +391,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="about-content pl-20">
+                        <div class="about-content pl-20 fade-left">
                             <div class="section-title">
                                 <span>About Stonebridges</span>
                                 <h2>Bridging Knowledge, Strategy, and Innovation</h2>
@@ -460,7 +460,7 @@
                         startups, and organizations to achieve excellence, growth, and impact</p>
                 </div>
 
-                <div class="services-slider owl-carousel owl-theme pt-45">
+                <div class="services-slider owl-carousel owl-theme pt-45 fade-up">
                     <div class="services-item">
                         <i class="flaticon-brainstorming"></i>
                         <h3><a href="service-details.html">Educational Services</a></h3>
@@ -494,16 +494,11 @@
         <!-- Process Area -->
         <div class="process-area pt-100 pb-70">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title">
+                <div class="row align-items-center fade-up">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
                             <span>Our Process</span>
                             <h2>Building Knowledge, Strategy & Impact Together</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="process-text">
                             <p>At Stonebridges, we follow a clear and collaborative process to ensure every project, 
                                 training, or advisory service leads to measurable results. From education to organizational 
                                 consulting, our focus is on creating sustainable impact that lasts.</p>
@@ -513,7 +508,7 @@
 
                 <div class="row justify-align-center pt-45">
                     <div class="col-lg-4">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center fade-right">
                             <div class="col-lg-12 col-6">
                                 <div class="process-card">
                                     <div class="number">1</div>
@@ -536,14 +531,16 @@
                                 <div class="process-card">
                                     <div class="number">3</div>
                                     <h3>Implementation & Monitor</h3>
-                                   <p>Lorem ipsum dolor sit amet, csectetur adipis elit csectetur ipsum dolor.</p>
+                                   <p>
+                                        We execute the designed strategies with precision, ensuring smooth implementation while closely monitoring progress. Through continuous tracking, evaluation, and feedback, we ensure goals are achieved efficiently and sustainably.
+                                   </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-8">
-                        <div class="process-img pl-20">
+                        <div class="process-img pl-20 fade-left">
                             <img src="{% static 'images/process-img.jpg'%}" alt="Images">
                         </div>
                     </div>
@@ -555,7 +552,7 @@
         <!-- Counter Area -->
         <div class="counter-area pt-100 pb-70">
             <div class="container">
-                <div class="row">
+                <div class="row fade-up">
                     <div class="col-lg-3 col-6 col-md-3">
                         <div class="counter-card">
                             <i class="flaticon-consulting"></i>
@@ -741,11 +738,11 @@
         <!-- Review Area End -->
 
         <!-- Choose Area -->
-        <div class="choose-area ptb-100 mt-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="choose-content">
+        <div class="choose-area ptb-100">
+            <div class="container-fluid">
+                <div class="row align-items-stretch g-0">
+                    <div class="col-lg-6 d-flex align-items-center fade-right">
+                        <div class="choose-content px-5 py-5">
                             <div class="section-title">
                                 <span>Why Choose Us</span>
                                 <h2>Bridging Knowledge and Practice for Lasting Impact</h2>
@@ -762,10 +759,10 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <!--<div class="choose-play-btn">
-                            <img src="{% static 'images/why-choose-us/why-choose-us.jpg' %}">
-                        </div>-->
+                    <div class="col-lg-6 p-0">
+                        <div class="choose-area-img fade-left">
+                            <img src="{% static 'images/why-choose-us/why-choose-us.jpg' %}" alt="why-choose-us">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -781,7 +778,7 @@
                     <p>Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
 
-                <div class="row pt-45 justify-content-center">
+                <div class="row pt-45 justify-content-center fade-up">
                     <div class="col-lg-4 col-6">
                         <div class="team-card">
                             <div class="team-img">
@@ -1076,8 +1073,7 @@
                     <div class="col-lg-8">
                         <div class="copy-right-text">
                             <p>
-                                © Stonebridges All Rights Reserved by 
-                                <a href="#" target="_blank">Tanlytic</a> 
+                                <b>© Stonebridges</b> All Rights Reserved Designed by Tanlytic
                             </p>
 
                             <ul class="copy-right-list">
@@ -1153,6 +1149,8 @@
         <script src="{% static 'js/contact-form-script.js' %}"></script>
         <!-- Custom Form JS -->
         <script src="{% static 'js/custom.js' %}"></script>
+        <!-- My Scripts JS -->
+        <script src="{% static 'js/myscripts.js' %}"></script>
 
     </body>
 </html>
